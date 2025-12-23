@@ -1,0 +1,5 @@
+/* Additional styling for contact card in hero */
+.hero-cards .contact-card {
+  max-width: 100%;
+  padding: 40px;
+}
