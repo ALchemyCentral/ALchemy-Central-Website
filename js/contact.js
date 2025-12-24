@@ -115,12 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const messages = {
       de: {
         success: 'Vielen Dank! Ihre Nachricht wurde erfolgreich versendet.',
-        error: 'Fehler beim Versenden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.',
+        error: 'Bitte überprüfen Sie Ihre Eingaben: Name (min. 2 Zeichen), gültige E-Mail, Nachricht (min. 10 Zeichen).',
         ratelimit: 'Bitte warten Sie 60 Sekunden zwischen den Nachrichten. Dies schützt vor Spam.'
       },
       en: {
         success: 'Thank you! Your message has been sent successfully.',
-        error: 'Error sending message. Please try again or contact us directly via email.',
+        error: 'Please check your input: Name (min. 2 chars), valid email, message (min. 10 chars).',
         ratelimit: 'Please wait 60 seconds between messages. This protects against spam.'
       }
     };
