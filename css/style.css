@@ -568,6 +568,125 @@ nav a:hover::before {
   font-size: 14px;
 }
 
+/* ================= HERO BRAND SECTION ================= */
+
+.hero-brand {
+  position: relative;
+  z-index: 10;
+  flex: 0 1 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+  animation: heroFadeIn 1.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s backwards;
+}
+
+.hero-brand-panel {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 27, 53, 0.7) 0%,
+    rgba(10, 22, 40, 0.6) 100%
+  );
+  backdrop-filter: blur(32px) saturate(180%);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 24px;
+  padding: 48px 40px;
+  box-shadow: 
+    0 24px 64px rgba(0, 0, 0, 0.5),
+    0 0 80px rgba(212, 175, 55, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(212, 175, 55, 0.1);
+  overflow: hidden;
+}
+
+.hero-brand-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 175, 55, 0.5) 50%,
+    transparent 100%
+  );
+}
+
+.hero-brand-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(79, 172, 254, 0.08) 0%,
+    transparent 60%
+  ),
+  radial-gradient(
+    circle at 50% 100%,
+    rgba(212, 175, 55, 0.06) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-brand-highlight {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 32px;
+}
+
+.hero-brand-claim {
+  display: block;
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--alchemy-gold);
+  letter-spacing: 0.03em;
+  text-transform: none;
+  text-shadow: 
+    0 2px 20px rgba(212, 175, 55, 0.5),
+    0 0 40px rgba(212, 175, 55, 0.2);
+  filter: brightness(1.1);
+}
+
+.hero-brand-divider {
+  position: relative;
+  z-index: 2;
+  height: 1px;
+  width: 80px;
+  margin: 0 auto 32px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--alchemy-gold) 50%,
+    transparent 100%
+  );
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.hero-brand-body {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-brand-text {
+  font-size: clamp(15px, 1.6vw, 17px);
+  color: rgba(203, 213, 225, 0.95);
+  line-height: 1.9;
+  text-align: center;
+  margin: 0;
+  white-space: pre-line;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
 .btn-primary {
   position: relative;
   z-index: 10;
@@ -1017,6 +1136,26 @@ footer {
     max-width: 100%;
   }
   
+  .hero-brand {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 32px 24px;
+    animation: heroFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.2s backwards;
+  }
+  
+  .hero-brand-panel {
+    padding: 40px 32px;
+  }
+  
+  .hero-brand-claim {
+    font-size: 22px;
+  }
+  
+  .hero-brand-text {
+    font-size: 16px;
+  }
+  
   .hero-cards {
     flex: 1 1 auto;
     width: 100%;
@@ -1072,6 +1211,37 @@ footer {
   .hero-wrapper {
     padding: 120px 20px 60px;
     gap: 32px;
+  }
+  
+  .hero-brand {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+  
+  .hero-brand-panel {
+    padding: 36px 28px;
+    border-radius: 20px;
+  }
+  
+  .hero-brand-highlight {
+    margin-bottom: 28px;
+  }
+  
+  .hero-brand-claim {
+    font-size: 20px;
+    color: var(--alchemy-gold) !important;
+    letter-spacing: 0.02em;
+  }
+  
+  .hero-brand-divider {
+    width: 60px;
+    margin-bottom: 28px;
+  }
+  
+  .hero-brand-text {
+    font-size: 15px;
+    color: rgba(203, 213, 225, 0.95);
+    line-height: 1.8;
   }
   
   .hero-cards {
@@ -1274,6 +1444,34 @@ footer {
   .hero-wrapper {
     padding: 110px 16px 50px;
     gap: 28px;
+  }
+  
+  .hero-brand {
+    padding: 20px 12px;
+  }
+  
+  .hero-brand-panel {
+    padding: 32px 24px;
+    border-radius: 18px;
+  }
+  
+  .hero-brand-highlight {
+    margin-bottom: 24px;
+  }
+  
+  .hero-brand-claim {
+    font-size: 18px;
+    letter-spacing: 0.015em;
+  }
+  
+  .hero-brand-divider {
+    width: 50px;
+    margin-bottom: 24px;
+  }
+  
+  .hero-brand-text {
+    font-size: 14px;
+    line-height: 1.75;
   }
   
   .hero h1 {

@@ -26,6 +26,8 @@
       home_title: 'Turning AL code into Business Value',
       home_sub: 'Intelligente, erklärbare Business-Central-Lösungen für Management, Finance und Entscheidungsfindung.',
       home_btn_products: 'Unsere Produkte',
+      home_brand_claim: 'Von sauberer AL-Architektur zu wirtschaftlicher Klarheit.',
+      home_brand_text: 'Business Central ist mehr als ein ERP.\nEs ist das wirtschaftliche Nervensystem Ihres Unternehmens.\n\nALchemy Central entwickelt hochwertige, upgrade-sichere Erweiterungen, die rohe Business-Central-Daten in transparente, erklärbare und handlungsrelevante Erkenntnisse verwandeln – ohne Excel-Chaos, Workarounds oder Blackboxes.',
 
       home_prod1_title: 'Economic Twin',
       home_prod1_text: 'Der wirtschaftliche Zwilling Ihres Unternehmens – live berechnet in Business Central.',
@@ -386,6 +388,8 @@
       home_title: 'Turning AL code into Business Value',
       home_sub: 'Intelligent, explainable Business Central solutions for management and finance.',
       home_btn_products: 'Our products',
+      home_brand_claim: 'From clean AL architecture to economic clarity.',
+      home_brand_text: 'Business Central is more than an ERP.\nIt is the economic nervous system of your company.\n\nALchemy Central builds high-quality, upgrade-safe extensions that transform raw Business Central data into transparent, explainable, and actionable insights – without Excel chaos, workarounds, or black boxes.',
 
       home_prod1_title: 'Economic Twin',
       home_prod1_text: 'Your company’s economic twin calculated live in Business Central.',
